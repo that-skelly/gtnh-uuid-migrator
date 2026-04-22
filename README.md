@@ -45,6 +45,12 @@ Do not edit live Better Questing files while the server is running.
 
 ### 3. Run the tool
 
+1. Download or clone this project.
+2. Open a terminal or PowerShell window in the project folder.
+3. Run the tool with the path to your world's `betterquesting` folder or `QuestProgress.json`.
+
+You do **not** need to place this tool inside the `betterquesting` folder. It can be run from anywhere as long as you give it the correct path.
+
 #### GTNH / per-player layout
 
 ```bash
