@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "betterquesting-uuid-migrator"
+version = "0.1.0"
+description = "Migrate Better Questing progress between UUIDs for both legacy and GTNH-style layouts."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "OpenAI Assistant + community user workflow" }
+]
+keywords = ["minecraft", "betterquesting", "gtnh", "uuid", "migration"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Games/Entertainment",
+  "Topic :: Utilities"
+]
+
+[project.scripts]
+bq-uuid-migrator = "bq_uuid_migrator.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bq_uuid_migrator*"]
